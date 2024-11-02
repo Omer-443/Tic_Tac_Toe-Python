@@ -1,0 +1,10 @@
+<TicTacToeApp>:
+    BoxLayout:
+        orientation: 'vertical'
+        TicTacToeGrid:
+            id: tic_tac_toe_grid
+        Button:
+            text: 'New Game'
+            size_hint_y: None
+            height: 50
+            on_release: app.reset_game()
